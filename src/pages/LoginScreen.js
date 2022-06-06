@@ -5,7 +5,7 @@ import {colors2} from '../asset/colors';
 const LoginScreen = () => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Login</Text>
+      <Text>Login Screen</Text>
     </View>
   );
 };
