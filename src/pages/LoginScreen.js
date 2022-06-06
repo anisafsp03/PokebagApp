@@ -1,15 +1,25 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import {colors2} from '../asset/colors';
+import { Formik } from 'formik';
+import { Button, React, TextInput, View } from 'react-native';
 
 const LoginScreen = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Login Screen</Text>
-    </View>
+    <Formik
+      initialValues={{email: ''}}
+      onSubmit={values => console.log(values)}>
+      {({handleChange, handleBlur, handleSubmit, values}) => (
+        <View>
+          <TextInput
+            onChangeText={handleChange('email')}
+            onBlur={handleBlur('email')}
+            value={values.email}
+          />
+          <Button onPress={handleSubmit} title="Submit" />
+        </View>
+      )}
+    </Formik>
   );
 };
 
 export default LoginScreen;
 
-const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({});
