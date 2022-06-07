@@ -1,11 +1,19 @@
-import {View, Text} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import CodePush from 'react-native-code-push';
 import LoginScreen from './src/pages/LoginScreen';
 import RegisterScreen from './src/pages/RegisterScreen';
 
 const Stack = createNativeStackNavigator();
+const CodePushOptions = {
+  checkFrequency: CodePush.CheckFrequency.ON_APP_START,
+  mandatoryInstallMode: CodePush.InstallMode.IMMEDIATE,
+  updateDialog: {
+    // appendReleaseDescription: true,
+    title: 'a new update is available!',
+  },
+};
 
 const App = () => {
   return (
@@ -26,4 +34,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CodePush(CodePushOptions)(App);
