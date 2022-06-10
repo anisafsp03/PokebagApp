@@ -51,3 +51,25 @@ export const colors2 = {
     secondary: mainColors.green2,
   },
 };
+
+export const pokemonColors = {
+  normal: "#A8A878",
+  fighting: "#187498",
+  flying: "#36AE7C",
+  poison: "#FF4949",
+  ground: "#B22727",
+  rock: "#F8CB2E",
+  bug: "#A8B820",
+  ghost: "#705898",
+  steel: "#B8B8D0",
+  fire: "#FA6C6C",
+  water: "#6890F0",
+  grass: "#48CFB2",
+  electric: "#FFCE4B",
+  psychic: "#F85888",
+  ice: "#98D8D8",
+  dragon: "#7038F8",
+  dark: "#705848",
+  fairy: "#EE99AC",
+};
+
