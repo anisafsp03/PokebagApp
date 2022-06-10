@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1047254340356",
+    "project_id": "pokebagapp",
+    "storage_bucket": "pokebagapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047254340356:android:83f7cc4b42eef4d57ff651",
+        "android_client_info": {
+          "package_name": "com.pokebagapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047254340356-deqr3ntk9gvodaf6dj8n092qn6som3pk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pokebagapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1047254340356-s9ckonnkf4edhp7m7eip2ls2vjc534l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChvcpzBSMROmJB4jshIL5fHDJnumDH2Qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047254340356-s9ckonnkf4edhp7m7eip2ls2vjc534l7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

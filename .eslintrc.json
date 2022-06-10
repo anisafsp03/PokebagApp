@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+       
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native",
+        "import"
+    ],
+  
+    "rules": {
+        // allow .js files to contain JSX code
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+            
+        // prevent eslint to complain about the "styles" variable being used before it was defined
+        "no-use-before-define": ["error", { "variables": false }],
+
+        // ignore errors for the react-navigation package
+        "import/prefer-default-export": "off",
+         "react/prop-types": 0,
+         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+
+}}

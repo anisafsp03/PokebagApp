@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PokebagApp</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">gmxse5hWoh9gMCHPTnEeaABqxnIEJ9u1hJ7EN</string>
 </resources>
